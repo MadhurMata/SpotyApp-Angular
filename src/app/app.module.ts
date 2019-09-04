@@ -13,18 +13,25 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 // Import routes
 import { ROUTES } from './app.routes';
 
+//services
+import { SpotifyService } from './services/spotify.service';
+
+//pipes
+import { NoimagePipe } from './pipes/noimage.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SearchComponent,
     ArtistComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagePipe
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot( ROUTES, { useHash: true } ),
-    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
