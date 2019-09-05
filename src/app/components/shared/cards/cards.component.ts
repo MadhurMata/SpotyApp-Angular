@@ -23,7 +23,7 @@ export class CardsComponent implements OnInit {
       artistId  = item.artist[0].id;
     }
 
-    this.router.navigate([ '/artist', artistId])
+    this.router.navigate([ '/artist', artistId ]);
 
   }
 
