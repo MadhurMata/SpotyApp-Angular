@@ -42,7 +42,7 @@
             <td><img [src]="topTrack.album.images | noimage" class="img-thumb" alt="Album imagen"></td>
             <td>{{ topTrack.album.name }}</td>
             <td>{{ topTrack.name }}</td>
-            <td><audio [src]="topTrack.preview_url" controls></audio></td>
+            <td><iframe [src]="topTrack.uri | safedom" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
           </tr>
       </tbody>
 

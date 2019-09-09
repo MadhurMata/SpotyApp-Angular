@@ -7,7 +7,7 @@ import { Router } from '@angular/router'
   templateUrl: './cards.component.html',
   styleUrls: ['./cards.component.css']
 })
-export class CardsComponent implements OnInit {
+export class CardsComponent {
 
   @Input() items: any[] = [];
 
